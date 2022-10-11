@@ -1,0 +1,5 @@
+D:\CLion\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/CLion/bin/ninja/win/ninja.exe -G Ninja -S E:\GitHub\STM32H7VBT6\ClionTemplate\OLED -B E:\GitHub\STM32H7VBT6\ClionTemplate\OLED\cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/GitHub/STM32H7VBT6/ClionTemplate/OLED/cmake-build-debug
