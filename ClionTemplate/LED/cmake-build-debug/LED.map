@@ -114,6 +114,8 @@ Discarded input sections
                 0x00000000       0x2c CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .text.HAL_GetTickFreq
                 0x00000000        0xc CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .text.HAL_Delay
+                0x00000000       0x28 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .text.HAL_SuspendTick
                 0x00000000        0xe CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .text.HAL_ResumeTick
@@ -456,6 +458,8 @@ Discarded input sections
                 0x00000000      0x150 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .text.HAL_GPIO_ReadPin
                 0x00000000        0xe CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .text.HAL_GPIO_TogglePin
+                0x00000000       0x12 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .text.HAL_GPIO_LockPin
                 0x00000000       0x2e CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .text.HAL_GPIO_EXTI_Callback
@@ -1165,7 +1169,7 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/c
                 0x08000000                g_pfnVectors
                 0x08000298                . = ALIGN (0x4)
 
-.text           0x08000298     0x1950
+.text           0x08000298     0x1910
                 0x08000298                . = ALIGN (0x4)
  *(.text)
  .text          0x08000298       0x40 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
@@ -1201,330 +1205,323 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/c
  .text.SystemClock_Config
                 0x08000860       0xbc CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
                 0x08000860                SystemClock_Config
- .text.main     0x0800091c       0x24 CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
+ .text.main     0x0800091c       0x20 CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
                 0x0800091c                main
  .text.HAL_MspInit
-                0x08000940       0x24 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
-                0x08000940                HAL_MspInit
+                0x0800093c       0x24 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+                0x0800093c                HAL_MspInit
  .text.NMI_Handler
-                0x08000964        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08000964                NMI_Handler
+                0x08000960        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x08000960                NMI_Handler
  .text.HardFault_Handler
-                0x08000966        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08000966                HardFault_Handler
+                0x08000962        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x08000962                HardFault_Handler
  .text.MemManage_Handler
-                0x08000968        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08000968                MemManage_Handler
+                0x08000964        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x08000964                MemManage_Handler
  .text.BusFault_Handler
-                0x0800096a        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x0800096a                BusFault_Handler
+                0x08000966        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x08000966                BusFault_Handler
  .text.UsageFault_Handler
-                0x0800096c        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x0800096c                UsageFault_Handler
+                0x08000968        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x08000968                UsageFault_Handler
  .text.SVC_Handler
-                0x0800096e        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x0800096e                SVC_Handler
+                0x0800096a        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0800096a                SVC_Handler
  .text.DebugMon_Handler
-                0x08000970        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08000970                DebugMon_Handler
+                0x0800096c        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0800096c                DebugMon_Handler
  .text.PendSV_Handler
-                0x08000972        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08000972                PendSV_Handler
+                0x0800096e        0x2 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0800096e                PendSV_Handler
  .text.SysTick_Handler
-                0x08000974        0x8 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08000974                SysTick_Handler
+                0x08000970        0x8 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+                0x08000970                SysTick_Handler
  .text.SystemInit
-                0x0800097c       0xbc CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
-                0x0800097c                SystemInit
+                0x08000978       0xbc CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
+                0x08000978                SystemInit
  .text.HAL_InitTick
-                0x08000a38       0x50 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08000a38                HAL_InitTick
+                0x08000a34       0x50 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08000a34                HAL_InitTick
  .text.HAL_Init
-                0x08000a88       0x5c CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08000a88                HAL_Init
+                0x08000a84       0x5c CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08000a84                HAL_Init
  .text.HAL_IncTick
-                0x08000ae4       0x18 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08000ae4                HAL_IncTick
+                0x08000ae0       0x18 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08000ae0                HAL_IncTick
  .text.HAL_GetTick
-                0x08000afc        0xc CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08000afc                HAL_GetTick
- .text.HAL_Delay
-                0x08000b08       0x28 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08000b08                HAL_Delay
+                0x08000af8        0xc CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08000af8                HAL_GetTick
  .text.HAL_GetREVID
-                0x08000b30        0xc CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08000b30                HAL_GetREVID
+                0x08000b04        0xc CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08000b04                HAL_GetREVID
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08000b3c       0x24 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-                0x08000b3c                HAL_NVIC_SetPriorityGrouping
+                0x08000b10       0x24 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x08000b10                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x08000b60       0x6c CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-                0x08000b60                HAL_NVIC_SetPriority
+                0x08000b34       0x6c CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x08000b34                HAL_NVIC_SetPriority
  .text.HAL_SYSTICK_Config
-                0x08000bcc       0x28 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-                0x08000bcc                HAL_SYSTICK_Config
+                0x08000ba0       0x28 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x08000ba0                HAL_SYSTICK_Config
  .text.HAL_GPIO_Init
-                0x08000bf4      0x228 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-                0x08000bf4                HAL_GPIO_Init
+                0x08000bc8      0x228 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x08000bc8                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x08000e1c        0xc CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-                0x08000e1c                HAL_GPIO_WritePin
- .text.HAL_GPIO_TogglePin
-                0x08000e28       0x12 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-                0x08000e28                HAL_GPIO_TogglePin
- *fill*         0x08000e3a        0x2 
+                0x08000df0        0xc CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x08000df0                HAL_GPIO_WritePin
  .text.HAL_PWREx_ConfigSupply
-                0x08000e3c       0x54 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
-                0x08000e3c                HAL_PWREx_ConfigSupply
+                0x08000dfc       0x54 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+                0x08000dfc                HAL_PWREx_ConfigSupply
  .text.HAL_RCC_OscConfig
-                0x08000e90      0x674 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x08000e90                HAL_RCC_OscConfig
+                0x08000e50      0x674 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x08000e50                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08001504      0x218 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x08001504                HAL_RCC_GetSysClockFreq
+                0x080014c4      0x218 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x080014c4                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x0800171c      0x294 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x0800171c                HAL_RCC_ClockConfig
+                0x080016dc      0x294 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x080016dc                HAL_RCC_ClockConfig
  .text.Reset_Handler
-                0x080019b0       0x50 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
-                0x080019b0                Reset_Handler
+                0x08001970       0x50 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
+                0x08001970                Reset_Handler
  .text.Default_Handler
-                0x08001a00        0x2 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
-                0x08001a00                RTC_Alarm_IRQHandler
-                0x08001a00                HASH_RNG_IRQHandler
-                0x08001a00                EXTI2_IRQHandler
-                0x08001a00                TIM8_CC_IRQHandler
-                0x08001a00                HRTIM1_Master_IRQHandler
-                0x08001a00                UART8_IRQHandler
-                0x08001a00                SPI4_IRQHandler
-                0x08001a00                TIM1_CC_IRQHandler
-                0x08001a00                BDMA_Channel6_IRQHandler
-                0x08001a00                DMA2_Stream5_IRQHandler
-                0x08001a00                HRTIM1_FLT_IRQHandler
-                0x08001a00                JPEG_IRQHandler
-                0x08001a00                DMA1_Stream5_IRQHandler
-                0x08001a00                BDMA_Channel1_IRQHandler
-                0x08001a00                HRTIM1_TIMD_IRQHandler
-                0x08001a00                TAMP_STAMP_IRQHandler
-                0x08001a00                EXTI3_IRQHandler
-                0x08001a00                LPTIM4_IRQHandler
-                0x08001a00                TIM8_TRG_COM_TIM14_IRQHandler
-                0x08001a00                LPTIM2_IRQHandler
-                0x08001a00                DFSDM1_FLT1_IRQHandler
-                0x08001a00                DMAMUX2_OVR_IRQHandler
-                0x08001a00                TIM8_UP_TIM13_IRQHandler
-                0x08001a00                I2C3_ER_IRQHandler
-                0x08001a00                DFSDM1_FLT2_IRQHandler
-                0x08001a00                MDMA_IRQHandler
-                0x08001a00                LPTIM3_IRQHandler
-                0x08001a00                HSEM1_IRQHandler
-                0x08001a00                EXTI0_IRQHandler
-                0x08001a00                I2C2_EV_IRQHandler
-                0x08001a00                DMA1_Stream2_IRQHandler
-                0x08001a00                FPU_IRQHandler
-                0x08001a00                OTG_HS_WKUP_IRQHandler
-                0x08001a00                FDCAN1_IT1_IRQHandler
-                0x08001a00                LTDC_ER_IRQHandler
-                0x08001a00                DMA2_Stream2_IRQHandler
-                0x08001a00                HRTIM1_TIME_IRQHandler
-                0x08001a00                SPI1_IRQHandler
-                0x08001a00                TIM6_DAC_IRQHandler
-                0x08001a00                DCMI_IRQHandler
-                0x08001a00                HRTIM1_TIMC_IRQHandler
-                0x08001a00                DMA2_Stream3_IRQHandler
-                0x08001a00                SAI2_IRQHandler
-                0x08001a00                DFSDM1_FLT3_IRQHandler
-                0x08001a00                USART6_IRQHandler
-                0x08001a00                TIM17_IRQHandler
-                0x08001a00                USART3_IRQHandler
-                0x08001a00                BDMA_Channel7_IRQHandler
-                0x08001a00                CRYP_IRQHandler
-                0x08001a00                LPTIM5_IRQHandler
-                0x08001a00                UART5_IRQHandler
-                0x08001a00                ADC3_IRQHandler
-                0x08001a00                DMA2_Stream0_IRQHandler
-                0x08001a00                TIM4_IRQHandler
-                0x08001a00                BDMA_Channel2_IRQHandler
-                0x08001a00                QUADSPI_IRQHandler
-                0x08001a00                I2C1_EV_IRQHandler
-                0x08001a00                DMA1_Stream6_IRQHandler
-                0x08001a00                DMAMUX1_OVR_IRQHandler
-                0x08001a00                DMA1_Stream1_IRQHandler
-                0x08001a00                TIM16_IRQHandler
-                0x08001a00                UART4_IRQHandler
-                0x08001a00                BDMA_Channel5_IRQHandler
-                0x08001a00                TIM3_IRQHandler
-                0x08001a00                RCC_IRQHandler
-                0x08001a00                TIM8_BRK_TIM12_IRQHandler
-                0x08001a00                TIM1_TRG_COM_IRQHandler
-                0x08001a00                Default_Handler
-                0x08001a00                ECC_IRQHandler
-                0x08001a00                CEC_IRQHandler
-                0x08001a00                EXTI15_10_IRQHandler
-                0x08001a00                BDMA_Channel0_IRQHandler
-                0x08001a00                ADC_IRQHandler
-                0x08001a00                DMA1_Stream7_IRQHandler
-                0x08001a00                HRTIM1_TIMA_IRQHandler
-                0x08001a00                SPI5_IRQHandler
-                0x08001a00                TIM7_IRQHandler
-                0x08001a00                SDMMC1_IRQHandler
-                0x08001a00                TIM5_IRQHandler
-                0x08001a00                DMA2_Stream7_IRQHandler
-                0x08001a00                TIM15_IRQHandler
-                0x08001a00                PVD_AVD_IRQHandler
-                0x08001a00                I2C3_EV_IRQHandler
-                0x08001a00                EXTI9_5_IRQHandler
-                0x08001a00                RTC_WKUP_IRQHandler
-                0x08001a00                LTDC_IRQHandler
-                0x08001a00                SAI3_IRQHandler
-                0x08001a00                ETH_WKUP_IRQHandler
-                0x08001a00                SPDIF_RX_IRQHandler
-                0x08001a00                SPI2_IRQHandler
-                0x08001a00                OTG_HS_EP1_IN_IRQHandler
-                0x08001a00                DMA1_Stream0_IRQHandler
-                0x08001a00                CRS_IRQHandler
-                0x08001a00                EXTI4_IRQHandler
-                0x08001a00                HRTIM1_TIMB_IRQHandler
-                0x08001a00                FDCAN2_IT1_IRQHandler
-                0x08001a00                ETH_IRQHandler
-                0x08001a00                TIM1_UP_IRQHandler
-                0x08001a00                BDMA_Channel4_IRQHandler
-                0x08001a00                OTG_HS_EP1_OUT_IRQHandler
-                0x08001a00                WWDG_IRQHandler
-                0x08001a00                SPI6_IRQHandler
-                0x08001a00                MDIOS_IRQHandler
-                0x08001a00                I2C4_EV_IRQHandler
-                0x08001a00                FDCAN2_IT0_IRQHandler
-                0x08001a00                LPUART1_IRQHandler
-                0x08001a00                FDCAN1_IT0_IRQHandler
-                0x08001a00                TIM2_IRQHandler
-                0x08001a00                OTG_FS_WKUP_IRQHandler
-                0x08001a00                OTG_HS_IRQHandler
-                0x08001a00                DMA2D_IRQHandler
-                0x08001a00                TIM1_BRK_IRQHandler
-                0x08001a00                EXTI1_IRQHandler
-                0x08001a00                SDMMC2_IRQHandler
-                0x08001a00                OTG_FS_EP1_OUT_IRQHandler
-                0x08001a00                BDMA_Channel3_IRQHandler
-                0x08001a00                UART7_IRQHandler
-                0x08001a00                MDIOS_WKUP_IRQHandler
-                0x08001a00                USART2_IRQHandler
-                0x08001a00                DFSDM1_FLT0_IRQHandler
-                0x08001a00                SAI4_IRQHandler
-                0x08001a00                I2C2_ER_IRQHandler
-                0x08001a00                DMA2_Stream1_IRQHandler
-                0x08001a00                FLASH_IRQHandler
-                0x08001a00                DMA2_Stream4_IRQHandler
-                0x08001a00                USART1_IRQHandler
-                0x08001a00                OTG_FS_IRQHandler
-                0x08001a00                SPI3_IRQHandler
-                0x08001a00                WAKEUP_PIN_IRQHandler
-                0x08001a00                DMA1_Stream4_IRQHandler
-                0x08001a00                OTG_FS_EP1_IN_IRQHandler
-                0x08001a00                I2C1_ER_IRQHandler
-                0x08001a00                FMC_IRQHandler
-                0x08001a00                FDCAN_CAL_IRQHandler
-                0x08001a00                SWPMI1_IRQHandler
-                0x08001a00                COMP1_IRQHandler
-                0x08001a00                LPTIM1_IRQHandler
-                0x08001a00                I2C4_ER_IRQHandler
-                0x08001a00                DMA2_Stream6_IRQHandler
-                0x08001a00                SAI1_IRQHandler
-                0x08001a00                DMA1_Stream3_IRQHandler
- *fill*         0x08001a02        0x2 
+                0x080019c0        0x2 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
+                0x080019c0                RTC_Alarm_IRQHandler
+                0x080019c0                HASH_RNG_IRQHandler
+                0x080019c0                EXTI2_IRQHandler
+                0x080019c0                TIM8_CC_IRQHandler
+                0x080019c0                HRTIM1_Master_IRQHandler
+                0x080019c0                UART8_IRQHandler
+                0x080019c0                SPI4_IRQHandler
+                0x080019c0                TIM1_CC_IRQHandler
+                0x080019c0                BDMA_Channel6_IRQHandler
+                0x080019c0                DMA2_Stream5_IRQHandler
+                0x080019c0                HRTIM1_FLT_IRQHandler
+                0x080019c0                JPEG_IRQHandler
+                0x080019c0                DMA1_Stream5_IRQHandler
+                0x080019c0                BDMA_Channel1_IRQHandler
+                0x080019c0                HRTIM1_TIMD_IRQHandler
+                0x080019c0                TAMP_STAMP_IRQHandler
+                0x080019c0                EXTI3_IRQHandler
+                0x080019c0                LPTIM4_IRQHandler
+                0x080019c0                TIM8_TRG_COM_TIM14_IRQHandler
+                0x080019c0                LPTIM2_IRQHandler
+                0x080019c0                DFSDM1_FLT1_IRQHandler
+                0x080019c0                DMAMUX2_OVR_IRQHandler
+                0x080019c0                TIM8_UP_TIM13_IRQHandler
+                0x080019c0                I2C3_ER_IRQHandler
+                0x080019c0                DFSDM1_FLT2_IRQHandler
+                0x080019c0                MDMA_IRQHandler
+                0x080019c0                LPTIM3_IRQHandler
+                0x080019c0                HSEM1_IRQHandler
+                0x080019c0                EXTI0_IRQHandler
+                0x080019c0                I2C2_EV_IRQHandler
+                0x080019c0                DMA1_Stream2_IRQHandler
+                0x080019c0                FPU_IRQHandler
+                0x080019c0                OTG_HS_WKUP_IRQHandler
+                0x080019c0                FDCAN1_IT1_IRQHandler
+                0x080019c0                LTDC_ER_IRQHandler
+                0x080019c0                DMA2_Stream2_IRQHandler
+                0x080019c0                HRTIM1_TIME_IRQHandler
+                0x080019c0                SPI1_IRQHandler
+                0x080019c0                TIM6_DAC_IRQHandler
+                0x080019c0                DCMI_IRQHandler
+                0x080019c0                HRTIM1_TIMC_IRQHandler
+                0x080019c0                DMA2_Stream3_IRQHandler
+                0x080019c0                SAI2_IRQHandler
+                0x080019c0                DFSDM1_FLT3_IRQHandler
+                0x080019c0                USART6_IRQHandler
+                0x080019c0                TIM17_IRQHandler
+                0x080019c0                USART3_IRQHandler
+                0x080019c0                BDMA_Channel7_IRQHandler
+                0x080019c0                CRYP_IRQHandler
+                0x080019c0                LPTIM5_IRQHandler
+                0x080019c0                UART5_IRQHandler
+                0x080019c0                ADC3_IRQHandler
+                0x080019c0                DMA2_Stream0_IRQHandler
+                0x080019c0                TIM4_IRQHandler
+                0x080019c0                BDMA_Channel2_IRQHandler
+                0x080019c0                QUADSPI_IRQHandler
+                0x080019c0                I2C1_EV_IRQHandler
+                0x080019c0                DMA1_Stream6_IRQHandler
+                0x080019c0                DMAMUX1_OVR_IRQHandler
+                0x080019c0                DMA1_Stream1_IRQHandler
+                0x080019c0                TIM16_IRQHandler
+                0x080019c0                UART4_IRQHandler
+                0x080019c0                BDMA_Channel5_IRQHandler
+                0x080019c0                TIM3_IRQHandler
+                0x080019c0                RCC_IRQHandler
+                0x080019c0                TIM8_BRK_TIM12_IRQHandler
+                0x080019c0                TIM1_TRG_COM_IRQHandler
+                0x080019c0                Default_Handler
+                0x080019c0                ECC_IRQHandler
+                0x080019c0                CEC_IRQHandler
+                0x080019c0                EXTI15_10_IRQHandler
+                0x080019c0                BDMA_Channel0_IRQHandler
+                0x080019c0                ADC_IRQHandler
+                0x080019c0                DMA1_Stream7_IRQHandler
+                0x080019c0                HRTIM1_TIMA_IRQHandler
+                0x080019c0                SPI5_IRQHandler
+                0x080019c0                TIM7_IRQHandler
+                0x080019c0                SDMMC1_IRQHandler
+                0x080019c0                TIM5_IRQHandler
+                0x080019c0                DMA2_Stream7_IRQHandler
+                0x080019c0                TIM15_IRQHandler
+                0x080019c0                PVD_AVD_IRQHandler
+                0x080019c0                I2C3_EV_IRQHandler
+                0x080019c0                EXTI9_5_IRQHandler
+                0x080019c0                RTC_WKUP_IRQHandler
+                0x080019c0                LTDC_IRQHandler
+                0x080019c0                SAI3_IRQHandler
+                0x080019c0                ETH_WKUP_IRQHandler
+                0x080019c0                SPDIF_RX_IRQHandler
+                0x080019c0                SPI2_IRQHandler
+                0x080019c0                OTG_HS_EP1_IN_IRQHandler
+                0x080019c0                DMA1_Stream0_IRQHandler
+                0x080019c0                CRS_IRQHandler
+                0x080019c0                EXTI4_IRQHandler
+                0x080019c0                HRTIM1_TIMB_IRQHandler
+                0x080019c0                FDCAN2_IT1_IRQHandler
+                0x080019c0                ETH_IRQHandler
+                0x080019c0                TIM1_UP_IRQHandler
+                0x080019c0                BDMA_Channel4_IRQHandler
+                0x080019c0                OTG_HS_EP1_OUT_IRQHandler
+                0x080019c0                WWDG_IRQHandler
+                0x080019c0                SPI6_IRQHandler
+                0x080019c0                MDIOS_IRQHandler
+                0x080019c0                I2C4_EV_IRQHandler
+                0x080019c0                FDCAN2_IT0_IRQHandler
+                0x080019c0                LPUART1_IRQHandler
+                0x080019c0                FDCAN1_IT0_IRQHandler
+                0x080019c0                TIM2_IRQHandler
+                0x080019c0                OTG_FS_WKUP_IRQHandler
+                0x080019c0                OTG_HS_IRQHandler
+                0x080019c0                DMA2D_IRQHandler
+                0x080019c0                TIM1_BRK_IRQHandler
+                0x080019c0                EXTI1_IRQHandler
+                0x080019c0                SDMMC2_IRQHandler
+                0x080019c0                OTG_FS_EP1_OUT_IRQHandler
+                0x080019c0                BDMA_Channel3_IRQHandler
+                0x080019c0                UART7_IRQHandler
+                0x080019c0                MDIOS_WKUP_IRQHandler
+                0x080019c0                USART2_IRQHandler
+                0x080019c0                DFSDM1_FLT0_IRQHandler
+                0x080019c0                SAI4_IRQHandler
+                0x080019c0                I2C2_ER_IRQHandler
+                0x080019c0                DMA2_Stream1_IRQHandler
+                0x080019c0                FLASH_IRQHandler
+                0x080019c0                DMA2_Stream4_IRQHandler
+                0x080019c0                USART1_IRQHandler
+                0x080019c0                OTG_FS_IRQHandler
+                0x080019c0                SPI3_IRQHandler
+                0x080019c0                WAKEUP_PIN_IRQHandler
+                0x080019c0                DMA1_Stream4_IRQHandler
+                0x080019c0                OTG_FS_EP1_IN_IRQHandler
+                0x080019c0                I2C1_ER_IRQHandler
+                0x080019c0                FMC_IRQHandler
+                0x080019c0                FDCAN_CAL_IRQHandler
+                0x080019c0                SWPMI1_IRQHandler
+                0x080019c0                COMP1_IRQHandler
+                0x080019c0                LPTIM1_IRQHandler
+                0x080019c0                I2C4_ER_IRQHandler
+                0x080019c0                DMA2_Stream6_IRQHandler
+                0x080019c0                SAI1_IRQHandler
+                0x080019c0                DMA1_Stream3_IRQHandler
+ *fill*         0x080019c2        0x2 
  .text.__libc_init_array
-                0x08001a04       0x48 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
-                0x08001a04                __libc_init_array
- .text.memset   0x08001a4c       0xa4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
-                0x08001a4c                memset
+                0x080019c4       0x48 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-init.o)
+                0x080019c4                __libc_init_array
+ .text.memset   0x08001a0c       0xa4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-memset.o)
+                0x08001a0c                memset
  .text.startup.register_fini
-                0x08001af0       0x14 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x08001b04        0xc d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
-                0x08001b04                atexit
+                0x08001ab0       0x14 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08001ac4        0xc d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-atexit.o)
+                0x08001ac4                atexit
  .text.__libc_fini_array
-                0x08001b10       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
-                0x08001b10                __libc_fini_array
+                0x08001ad0       0x2c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-fini.o)
+                0x08001ad0                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x08001b3c        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x08001b3c                __retarget_lock_acquire_recursive
+                0x08001afc        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x08001afc                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08001b40        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x08001b40                __retarget_lock_release_recursive
+                0x08001b00        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x08001b00                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x08001b44       0x8c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
-                0x08001b44                __register_exitproc
+                0x08001b04       0x8c d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__atexit.o)
+                0x08001b04                __register_exitproc
  *(.glue_7)
- .glue_7        0x08001bd0        0x0 linker stubs
+ .glue_7        0x08001b90        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08001bd0        0x0 linker stubs
+ .glue_7t       0x08001b90        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08001bd0        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x08001b90        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x08001bd0        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x08001bd0                _init
- .init          0x08001bd4        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x08001b90        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x08001b90                _init
+ .init          0x08001b94        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x08001bdc        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x08001bdc                _fini
- .fini          0x08001be0        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
-                0x08001be8                . = ALIGN (0x4)
-                0x08001be8                _etext = .
+ .fini          0x08001b9c        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x08001b9c                _fini
+ .fini          0x08001ba0        0x8 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+                0x08001ba8                . = ALIGN (0x4)
+                0x08001ba8                _etext = .
 
-.vfp11_veneer   0x08001be8        0x0
- .vfp11_veneer  0x08001be8        0x0 linker stubs
+.vfp11_veneer   0x08001ba8        0x0
+ .vfp11_veneer  0x08001ba8        0x0 linker stubs
 
-.v4_bx          0x08001be8        0x0
- .v4_bx         0x08001be8        0x0 linker stubs
+.v4_bx          0x08001ba8        0x0
+ .v4_bx         0x08001ba8        0x0 linker stubs
 
-.iplt           0x08001be8        0x0
- .iplt          0x08001be8        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x08001ba8        0x0
+ .iplt          0x08001ba8        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x08001be8       0x14
-                0x08001be8                . = ALIGN (0x4)
+.rodata         0x08001ba8       0x14
+                0x08001ba8                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.D1CorePrescTable
-                0x08001be8       0x10 CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
-                0x08001be8                D1CorePrescTable
+                0x08001ba8       0x10 CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
+                0x08001ba8                D1CorePrescTable
  .rodata._global_impure_ptr
-                0x08001bf8        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
-                0x08001bf8                _global_impure_ptr
-                0x08001bfc                . = ALIGN (0x4)
+                0x08001bb8        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-impure.o)
+                0x08001bb8                _global_impure_ptr
+                0x08001bbc                . = ALIGN (0x4)
 
-.rel.dyn        0x08001bfc        0x0
- .rel.iplt      0x08001bfc        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x08001bbc        0x0
+ .rel.iplt      0x08001bbc        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08001bfc        0x0
-                0x08001bfc                __exidx_start = .
+.ARM            0x08001bbc        0x0
+                0x08001bbc                __exidx_start = .
  *(.ARM.exidx*)
-                0x08001bfc                __exidx_end = .
+                0x08001bbc                __exidx_end = .
 
-.preinit_array  0x08001bfc        0x0
-                0x08001bfc                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08001bbc        0x0
+                0x08001bbc                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08001bfc                PROVIDE (__preinit_array_end = .)
+                0x08001bbc                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x08001bfc        0x8
-                0x08001bfc                PROVIDE (__init_array_start = .)
+.init_array     0x08001bbc        0x8
+                0x08001bbc                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08001bfc        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x08001bbc        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08001c00        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08001c04                PROVIDE (__init_array_end = .)
+ .init_array    0x08001bc0        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x08001bc4                PROVIDE (__init_array_end = .)
 
-.fini_array     0x08001c04        0x4
-                0x08001c04                PROVIDE (__fini_array_start = .)
+.fini_array     0x08001bc4        0x4
+                0x08001bc4                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08001c04        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x08001c08                PROVIDE (__fini_array_end = .)
-                0x08001c08                _sidata = LOADADDR (.data)
+ .fini_array    0x08001bc4        0x4 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x08001bc8                PROVIDE (__fini_array_end = .)
+                0x08001bc8                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x43c load address 0x08001c08
+.data           0x20000000      0x43c load address 0x08001bc8
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1550,11 +1547,11 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/c
                 0x2000043c                . = ALIGN (0x4)
                 0x2000043c                _edata = .
 
-.igot.plt       0x2000043c        0x0 load address 0x08002044
+.igot.plt       0x2000043c        0x0 load address 0x08002004
  .igot.plt      0x2000043c        0x0 d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
                 0x2000043c                . = ALIGN (0x4)
 
-.bss            0x2000043c       0x24 load address 0x08002044
+.bss            0x2000043c       0x24 load address 0x08002004
                 0x2000043c                _sbss = .
                 0x2000043c                __bss_start__ = _sbss
  *(.bss)
@@ -1572,7 +1569,7 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/c
                 0x20000460                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000460      0x600 load address 0x08002044
+                0x20000460      0x600 load address 0x08002004
                 0x20000460                . = ALIGN (0x8)
                 0x20000460                PROVIDE (end = .)
                 [!provide]                PROVIDE (_end = .)
@@ -1646,31 +1643,31 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-no
 LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
 LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a
 
-.debug_info     0x00000000     0x7d28
+.debug_info     0x00000000     0x7d26
  .debug_info    0x00000000      0x674 CMakeFiles/LED.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x00000674      0x7db CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
- .debug_info    0x00000e4f      0x4a0 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_info    0x000012ef      0x145 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_info    0x00001434      0xaf5 CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
- .debug_info    0x00001f29     0x16a6 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_info    0x000035cf     0x13f0 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_info    0x000049bf      0xd66 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_info    0x00005725     0x122e CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
- .debug_info    0x00006953     0x13b3 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_info    0x00007d06       0x22 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
+ .debug_info    0x00000674      0x7d9 CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x00000e4d      0x4a0 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_info    0x000012ed      0x145 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_info    0x00001432      0xaf5 CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_info    0x00001f27     0x16a6 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_info    0x000035cd     0x13f0 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_info    0x000049bd      0xd66 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_info    0x00005723     0x122e CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_info    0x00006951     0x13b3 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_info    0x00007d04       0x22 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
 
-.debug_abbrev   0x00000000     0x137e
+.debug_abbrev   0x00000000     0x1387
  .debug_abbrev  0x00000000      0x181 CMakeFiles/LED.elf.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x00000181      0x1f3 CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x00000374       0xd7 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_abbrev  0x0000044b       0x7e CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_abbrev  0x000004c9      0x162 CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
- .debug_abbrev  0x0000062b      0x264 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_abbrev  0x0000088f      0x37d CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_abbrev  0x00000c0c      0x239 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_abbrev  0x00000e45      0x29b CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
- .debug_abbrev  0x000010e0      0x28c CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_abbrev  0x0000136c       0x12 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
+ .debug_abbrev  0x00000181      0x1fc CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x0000037d       0xd7 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_abbrev  0x00000454       0x7e CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_abbrev  0x000004d2      0x162 CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_abbrev  0x00000634      0x264 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_abbrev  0x00000898      0x37d CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_abbrev  0x00000c15      0x239 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_abbrev  0x00000e4e      0x29b CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_abbrev  0x000010e9      0x28c CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_abbrev  0x00001375       0x12 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
 
 .debug_aranges  0x00000000      0x5a0
  .debug_aranges
@@ -1709,35 +1706,35 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\l
  .debug_ranges  0x00000520       0xe8 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
  .debug_ranges  0x00000608       0x20 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
 
-.debug_line     0x00000000     0x42b5
+.debug_line     0x00000000     0x42bd
  .debug_line    0x00000000      0x1f2 CMakeFiles/LED.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x000001f2      0x403 CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
- .debug_line    0x000005f5      0x169 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_line    0x0000075e      0x1c7 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_line    0x00000925      0x3fc CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
- .debug_line    0x00000d21      0x920 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_line    0x00001641      0x7eb CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_line    0x00001e2c      0x6ef CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_line    0x0000251b      0xae0 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
- .debug_line    0x00002ffb     0x1214 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_line    0x0000420f       0xa6 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
+ .debug_line    0x000001f2      0x40b CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x000005fd      0x169 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_line    0x00000766      0x1c7 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_line    0x0000092d      0x3fc CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_line    0x00000d29      0x920 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_line    0x00001649      0x7eb CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_line    0x00001e34      0x6ef CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_line    0x00002523      0xae0 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_line    0x00003003     0x1214 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_line    0x00004217       0xa6 CMakeFiles/LED.elf.dir/startup/startup_stm32h750xx.s.obj
 
 .debug_str      0x00000000     0x291d
  .debug_str     0x00000000      0x480 CMakeFiles/LED.elf.dir/Core/Src/gpio.c.obj
                                 0x4e1 (size before relaxing)
- .debug_str     0x00000480      0x31c CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
-                                0x564 (size before relaxing)
- .debug_str     0x0000079c       0x51 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_str     0x00000480      0x2ff CMakeFiles/LED.elf.dir/Core/Src/main.c.obj
+                                0x55f (size before relaxing)
+ .debug_str     0x0000077f       0x51 CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj
                                 0x430 (size before relaxing)
- .debug_str     0x000007ed       0xdc CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_str     0x000007d0       0xdc CMakeFiles/LED.elf.dir/Core/Src/stm32h7xx_it.c.obj
                                 0x27d (size before relaxing)
- .debug_str     0x000008c9      0x2b2 CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
+ .debug_str     0x000008ac      0x2b2 CMakeFiles/LED.elf.dir/Core/Src/system_stm32h7xx.c.obj
                                 0x6a6 (size before relaxing)
- .debug_str     0x00000b7b      0xf72 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_str     0x00000b5e      0xf7c CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
                                0x14fd (size before relaxing)
- .debug_str     0x00001aed      0x59d CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_str     0x00001ada      0x59d CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
                                0x1095 (size before relaxing)
- .debug_str     0x0000208a      0x10f CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_str     0x00002077      0x122 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
                                 0x712 (size before relaxing)
  .debug_str     0x00002199      0x579 CMakeFiles/LED.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
                                 0xa87 (size before relaxing)

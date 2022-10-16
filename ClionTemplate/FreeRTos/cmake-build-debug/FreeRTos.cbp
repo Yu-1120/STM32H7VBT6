@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FreeRTos"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FreeRTos.elf">
+				<Option output="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/FreeRTos.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32H750xx"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Inc"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 FreeRTos.elf"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FreeRTos.elf/fast">
+				<Option output="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/FreeRTos.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32H750xx"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Inc"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
+					<Add directory="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 FreeRTos.elf/fast"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Inc/FreeRTOSConfig.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Inc/gpio.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Inc/main.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Inc/stm32h7xx_hal_conf.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Inc/stm32h7xx_it.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Src/freertos.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Src/gpio.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Src/main.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Src/stm32h7xx_hal_msp.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Src/stm32h7xx_it.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Src/syscalls.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Core/Src/system_stm32h7xx.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h750xx.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/cmsis_armclang_ltm.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_armv81mml.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_cm35p.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/atomic.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/list.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/message_buffer.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_prototypes.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/task.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/list.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/STM32H750VBTx_FLASH.ld">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/startup/startup_stm32h750xx.s">
+			<Option target="FreeRTos.elf"/>
+		</Unit>
+		<Unit filename="E:/GitHub/STM32H7VBT6/ClionTemplate/FreeRTos/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
